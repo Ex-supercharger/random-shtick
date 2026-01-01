@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "io.github.ex_supercharger.random_shtick.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
