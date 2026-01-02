@@ -16,7 +16,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.github.ex_supercharger.random_shtick.Random_Shtick"
+			"io.github.ex_supercharger.random_shtick.Random_Shtick",
+			"io.github.ex_supercharger.random_shtick.item.RandomShtickItems"
 		],
 		"client": [
 			"io.github.ex_supercharger.random_shtick.Random_ShtickClient"
