@@ -17,10 +17,13 @@
 	"entrypoints": {
 		"main": [
 			"io.github.ex_supercharger.random_shtick.Random_Shtick",
-			"io.github.ex_supercharger.random_shtick.item.RandomShtickItems"
+			"io.github.ex_supercharger.random_shtick.item.RandomShtickItems",
+			"io.github.ex_supercharger.random_shtick.networking.basic.RandomShtickNetworkingBasic"
 		],
 		"client": [
-			"io.github.ex_supercharger.random_shtick.Random_ShtickClient"
+			"io.github.ex_supercharger.random_shtick.Random_ShtickClient",
+			"io.github.ex_supercharger.random_shtick.item.RandomShtickItemsClient",
+			"io.github.ex_supercharger.random_shtick.networking.basic.RandomShtickNetworkingBasicClient"
 		]
 	},
 	"mixins": [

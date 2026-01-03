@@ -38,7 +38,7 @@ public class ModItems {
             .build();
 
     //Register Items
-    public static final Item CAMERA_STICK = register("camera_stick", Item::new, new Item.Properties());
+    public static final Item CAMERA_STICK = register("camera_stick", properties ->new CameraStick(properties), new Item.Properties());
 
     public static void initialize() {
         //Register the creative tab
