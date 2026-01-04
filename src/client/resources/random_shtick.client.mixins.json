@@ -3,7 +3,9 @@
 	"package": "io.github.ex_supercharger.random_shtick.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+		"LevelRendererMixin",
+		"GuiMixin",
+		"GameRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
