@@ -1,10 +1,17 @@
 package io.github.ex_supercharger.random_shtick;
 
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.minecraft.client.Minecraft;
 
 public class Random_ShtickClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		ServerLivingEntityEvents.AFTER_DEATH.register((entity, damageSource) -> {
+			Minecraft MC = Minecraft.getInstance();
+			if (entity.equals(MC.getCameraEntity())) {
+				MC.setCameraEntity(MC.player);
+			}
+		});
 	}
 }

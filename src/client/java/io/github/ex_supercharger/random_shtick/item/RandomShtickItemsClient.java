@@ -3,6 +3,7 @@ package io.github.ex_supercharger.random_shtick.item;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 
 import net.fabricmc.api.ClientModInitializer;
@@ -13,6 +14,10 @@ public class RandomShtickItemsClient implements ClientModInitializer {
     public void onInitializeClient() {
         UseEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
             if (!world.isClientSide()) {
+                return InteractionResult.PASS;
+            }
+
+            if (!(entity instanceof LivingEntity)) {
                 return InteractionResult.PASS;
             }
 
